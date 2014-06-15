@@ -128,6 +128,26 @@ Errors Poliz::Parser()
 			__tmp[strlen(__tmp)]=__exp[__pos];     //записываем во временную переменную
 			continue;
 		}
+		else if (__exp[__pos]==',')
+		{
+            Errors err=addTmpToOutExp();                       //добавляем из __tmp в выходное выражение
+			if (err!=OK) return err;                        //если не вышло выходим с ошибкой
+
+			int j=__stack.size();                          //получаем разсер стека
+			while(__stack[j]!=OPEN_BKT)                    //ищем в стеке открытую скобку
+			{
+				j--;
+				if (j==-1) return NOT_FOUND_OPEN_BKT;      //Скобки в стеке нет, ошибка
+			}
+			j++;
+			while(j<__stack.size())                        //Переписыааем из стека в выходное выражение операторы
+			{
+				__outExp->addToken(__stack[j]);
+				__stack.erase(&__stack.at(j));
+			}
+			__lastToken=CLOSE_BKT;
+			continue;
+        }
 		else return NOT_CORRECT_SYMBOL;
 	}
 

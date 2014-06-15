@@ -27,6 +27,7 @@ class Calc
 		Errors exp();                       //возведение в степень
 		Errors e();                         //экспонента
 		Errors mod();
+		Errors log();
 		Tokens *__Exp;                      //выражение для вычисления
 		Tokens *__stack;                    //стек
 		double __result;                    //результат

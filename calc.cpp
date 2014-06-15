@@ -82,6 +82,11 @@ Errors Calc::run()
 				{
 					__mod=true;
                 }
+			}
+			else if (__Exp->getToken(i)->getType()==LOG)
+			{
+				err=log();
+				if (err!=OK) return err;
             }
 		}
 	}
@@ -234,6 +239,19 @@ Errors Calc::mod()
 		if (__stack->getToken(StackSize-1)->getNum()<0)	tmp=__stack->getToken(StackSize-1)->getNum()*-1;
 		else tmp=__stack->getToken(StackSize-1)->getNum();
 		__stack->getToken(StackSize-1)->setNum(tmp);
+	}
+	else return NOT_FOUND_PARAM;
+	return OK;
+}
+//
+Errors Calc::log()
+{
+	int StackSize=__stack->getSize();
+	if (StackSize>=2)
+	{
+		double tmp=std::log(__stack->getToken(StackSize-2)->getNum())/std::log(__stack->getToken(StackSize-1)->getNum());
+		__stack->getToken(StackSize-2)->setNum(tmp);
+		__stack->deleteToken(StackSize-1);
 	}
 	else return NOT_FOUND_PARAM;
 	return OK;
