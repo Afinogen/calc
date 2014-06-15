@@ -102,11 +102,6 @@ Errors Calc::minus()
 		__stack->getToken(StackSize-2)->setNum(tmp);        //записываем результат
 		__stack->deleteToken(StackSize-1);                  //удаляем не нужный операнд
 	}
-	else if (StackSize==1)
-	{
-		double tmp=__stack->getToken(StackSize-1)->getNum()*-1;   //вычисление
-		__stack->getToken(StackSize-1)->setNum(tmp);        //записываем результат
-	}
 	else return NOT_FOUND_2_PARAM;                       //иначе ошибка
 	return OK;
 }

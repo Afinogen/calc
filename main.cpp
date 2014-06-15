@@ -5,7 +5,7 @@
 #pragma argsused
 
 #include <tchar.h>
-#include <stdio.h>
+//#include <stdio.h>
 #include <iostream>
 #include <conio.h>
 #include "poliz.h"
