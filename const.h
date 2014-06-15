@@ -35,7 +35,10 @@ enum Errors
 	NOT_FOUND_2_PARAM,			//не найден 2-й параметр
 	NOT_FOUND_PARAM,			//не найден 1-й параметр
 	ERROR_CALC,                 //ошибка вычисления
-	POW_2_PARAM_ERROR           //не корректный параметр для возведения в степень
+	POW_2_PARAM_ERROR,          //не корректный параметр для возведения в степень
+	NOT_FOUND_CLOSE_MOD,
+	MANY_OPERATORS,
+	SYNTAX_ERROR
 };
 
 #endif

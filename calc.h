@@ -26,9 +26,11 @@ class Calc
 		Errors ctg();                       //вычисление ctg
 		Errors exp();                       //возведение в степень
 		Errors e();                         //экспонента
+		Errors mod();
 		Tokens *__Exp;                      //выражение для вычисления
 		Tokens *__stack;                    //стек
 		double __result;                    //результат
+		bool __mod;
 };
 
 #endif

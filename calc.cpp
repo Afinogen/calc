@@ -15,6 +15,7 @@ Calc::Calc(Tokens *exp)
 	__Exp=exp;               //сохран€ем выражение дл€ вычислени€
 	__stack=new Tokens();    //создаем стек
 	__result=0;
+	__mod=false;
 }
 //ƒеструктор
 Calc::~Calc()
@@ -70,6 +71,18 @@ Errors Calc::run()
 				err=e();
 				if (err!=OK) return err;
 			}
+			else if (__Exp->getToken(i)->getType()==MOD)
+			{
+				if (__mod)
+				{
+					mod();
+                    __mod=false;
+				}
+				else
+				{
+					__mod=true;
+                }
+            }
 		}
 	}
 	if (__stack->getSize()==1)                         //выражение вычислено, в стеке должно быть 1 число - редультат
@@ -88,6 +101,11 @@ Errors Calc::minus()
 		double tmp=__stack->getToken(StackSize-2)->getNum()-__stack->getToken(StackSize-1)->getNum();   //вычисление
 		__stack->getToken(StackSize-2)->setNum(tmp);        //записываем результат
 		__stack->deleteToken(StackSize-1);                  //удал€ем не нужный операнд
+	}
+	else if (StackSize==1)
+	{
+		double tmp=__stack->getToken(StackSize-1)->getNum()*-1;   //вычисление
+		__stack->getToken(StackSize-1)->setNum(tmp);        //записываем результат
 	}
 	else return NOT_FOUND_2_PARAM;                       //иначе ошибка
 	return OK;
@@ -204,9 +222,23 @@ Errors Calc::e()
 	int StackSize=__stack->getSize();
 	if (StackSize>=1)
 	{
-        if (__stack->getToken(StackSize-1)->getNum()<0) return POW_2_PARAM_ERROR;
+		if (__stack->getToken(StackSize-1)->getNum()<0) return POW_2_PARAM_ERROR;
 		double tmp=std::exp(__stack->getToken(StackSize-1)->getNum());
-		__stack->deleteToken(StackSize-1);
+		__stack->getToken(StackSize-1)->setNum(tmp);
+	}
+	else return NOT_FOUND_PARAM;
+	return OK;
+}
+//
+Errors Calc::mod()
+{
+	int StackSize=__stack->getSize();
+	if (StackSize>=1)
+	{
+		double tmp=0;
+		if (__stack->getToken(StackSize-1)->getNum()<0)	tmp=__stack->getToken(StackSize-1)->getNum()*-1;
+		else tmp=__stack->getToken(StackSize-1)->getNum();
+		__stack->getToken(StackSize-1)->setNum(tmp);
 	}
 	else return NOT_FOUND_PARAM;
 	return OK;

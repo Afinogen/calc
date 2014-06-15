@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\tokens.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.465,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\token.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.000,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.947,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\tokens.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.080,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.947,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.595,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.583,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\poliz.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.741,=C:\Users\Afinogen\Documents\RAD Studio\Projects\File1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.595,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.319,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\convert.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.521,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.623,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\calc.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.000,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.763,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Project1PCH1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\kursPCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.307,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.661,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.707,=C:\Users\Afinogen\Documents\RAD Studio\Projects\splitItemDetail.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.775,C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1.cbproj=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\kurs.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.306,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.661,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.623,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\calc.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.472,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.950,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.472,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.521,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.306,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.307,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.223,C:\Users\Afinogen\Documents\RAD Studio\Projects\File1.cpp=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\tokens.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.623,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\calc.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.583,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\poliz.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.152,=C:\Users\Afinogen\Documents\RAD Studio\Projects\groupedItems.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.657,=C:\Users\Afinogen\Documents\RAD Studio\Projects\itemDetail.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.250,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\tokens.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.583,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\poliz.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.458,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\File1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\const.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.706,=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\File1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.319,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\convert.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.465,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\token.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.319,C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Unit1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\convert.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.548,=C:\Users\Afinogen\Documents\RAD Studio\Projects\groupedItems.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.269,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.640,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.290,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.050,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.619,C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h=C:\Users\Afinogen\Documents\RAD Studio\Projects\kurs_os_16\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.525,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.269,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.718,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.640,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.929,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.288,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.290,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.525,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.050,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.718,=C:\Users\Afinogen\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
   </Transactions>
 </BorlandProject>

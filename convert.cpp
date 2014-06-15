@@ -25,7 +25,7 @@ Operator Convert::OpToConstOp(const char *op)
 	else if (strcmp(op,"tg")==0)  return TG;
 	else if (strcmp(op,"ctg")==0)  return CTG;
 	else if (strcmp(op,"log")==0)  return LOG;
-	else if (strcmp(op,"e")==0)  return E;
+	else if (strcmp(op,"e^")==0)  return E;
 	else if (strcmp(op,"^")==0)  return EXP;
 	else if (strcmp(op,"*")==0)  return MUL;
 	else if (strcmp(op,"/")==0)  return DIV;
@@ -72,7 +72,7 @@ char *Convert::ConstOpToOp(Operator op) const
 	else if (op==TG)  return "tg";
 	else if (op==CTG)  return "ctg";
 	else if (op==LOG)  return "log";
-	else if (op==E)  return "e";
+	else if (op==E)  return "e^";
 	else if (op==EXP)  return "^";
 	else if (op==MUL)  return "*";
 	else if (op==DIV)  return "/";

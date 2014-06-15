@@ -24,11 +24,15 @@ class Poliz: public Convert
 	private:
 		void clearTmp();			//очистка временной переменной
 		Errors addTmpToOutExp();		//смотрим что насобиралось в __tmp и добавляем это в выходное выражение
-        void addOpToOutExp(Operator op);
+		void addOpToOutExp(Operator op);
+		Errors checkToken(Operator op);
 		char *__exp;
 		vector<Operator> __stack;
 		Tokens *__outExp;
 		char *__tmp;				//временная переменная
+		int __pos;
+		bool __mod;
+		Operator __lastToken;
 };
 
 #endif
