@@ -249,7 +249,7 @@ Errors Calc::log()
 	int StackSize=__stack->getSize();
 	if (StackSize>=2)
 	{
-		double tmp=std::log(__stack->getToken(StackSize-2)->getNum())/std::log(__stack->getToken(StackSize-1)->getNum());
+		double tmp=std::log(__stack->getToken(StackSize-1)->getNum())/std::log(__stack->getToken(StackSize-2)->getNum());
 		__stack->getToken(StackSize-2)->setNum(tmp);
 		__stack->deleteToken(StackSize-1);
 	}
