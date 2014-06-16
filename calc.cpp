@@ -66,6 +66,16 @@ Errors Calc::run()
 				err=this->cos();
 				if (err!=OK) return err;
 			}
+			else if (__Exp->getToken(i)->getType()==TG)
+			{
+				err=tg();
+				if (err!=OK) return err;
+			}
+			else if (__Exp->getToken(i)->getType()==CTG)
+			{
+				err=ctg();
+				if (err!=OK) return err;
+			}
 			else if (__Exp->getToken(i)->getType()==EXP)
 			{
 				err=exp();
