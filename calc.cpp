@@ -61,6 +61,11 @@ Errors Calc::run()
 				err=this->sin();
 				if (err!=OK) return err;
 			}
+			else if (__Exp->getToken(i)->getType()==COS)
+			{
+				err=this->cos();
+				if (err!=OK) return err;
+			}
 			else if (__Exp->getToken(i)->getType()==EXP)
 			{
 				err=exp();
@@ -156,7 +161,6 @@ Errors Calc::sin()
 	int StackSize=__stack->getSize();
 	if (StackSize>=1)
 	{
-		//if (__stack->getToken(StackSize-1)->getNum()==0) return DIV_NULL;
 		double tmp=std::sin(__stack->getToken(StackSize-1)->getNum());
 		__stack->getToken(StackSize-1)->setNum(tmp);
 	}
@@ -169,7 +173,6 @@ Errors Calc::cos()
 	int StackSize=__stack->getSize();
 	if (StackSize>=1)
 	{
-		//if (__stack->getToken(StackSize-1)->getNum()==0) return DIV_NULL;
 		double tmp=std::cos(__stack->getToken(StackSize-1)->getNum());
 		__stack->getToken(StackSize-1)->setNum(tmp);
 	}
@@ -182,7 +185,6 @@ Errors Calc::tg()
 	int StackSize=__stack->getSize();
 	if (StackSize>=1)
 	{
-		//if (__stack->getToken(StackSize-1)->getNum()==0) return DIV_NULL;
 		double tmp=std::tan(__stack->getToken(StackSize-1)->getNum());
 		__stack->getToken(StackSize-1)->setNum(tmp);
 	}
@@ -195,7 +197,6 @@ Errors Calc::ctg()
 	int StackSize=__stack->getSize();
 	if (StackSize>=1)
 	{
-		//if (__stack->getToken(StackSize-1)->getNum()==0) return DIV_NULL;
 		double tmp=std::cos(__stack->getToken(StackSize-1)->getNum())/std::sin(__stack->getToken(StackSize-1)->getNum());
 		__stack->getToken(StackSize-1)->setNum(tmp);
 	}
