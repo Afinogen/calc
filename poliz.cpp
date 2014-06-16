@@ -194,7 +194,7 @@ Errors Poliz::addTmpToOutExp()
 				__lastToken=OpToConstOp(__tmp);
 			}
 		}
-		else if (__tmp[0]=='0')
+		else if (__tmp[0]=='0' && strlen(__tmp)==1)
 		{
 			__outExp->addToken(NUM,0);
 			__lastToken=NUM;
