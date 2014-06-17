@@ -157,7 +157,7 @@ Errors Calc::div()
 	int StackSize=__stack->getSize();
 	if (StackSize>=2)
 	{
-        if (__stack->getToken(StackSize-1)->getNum()==0) return DIV_NULL;
+		if (__stack->getToken(StackSize-1)->getNum()==0) return DIV_NULL;
 		double tmp=__stack->getToken(StackSize-2)->getNum()/__stack->getToken(StackSize-1)->getNum();
 		__stack->getToken(StackSize-2)->setNum(tmp);
 		__stack->deleteToken(StackSize-1);	

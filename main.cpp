@@ -33,6 +33,10 @@ int _tmain(int argc, _TCHAR* argv[])
 			else if (err==NOT_FOUND_OPERATOR) cout<<"NOT_FOUND_OPERATOR";         //Нет соотвествия оператору
 			else if (err==EXP_NULL) cout<<"EXP_NULL";                   //выражение пустое
 			else if (err==NOT_CORRECT_SYMBOL) cout<<"NOT_CORRECT_SYMBOL";			//не корректный символ
+			else if (err==NOT_FOUND_2_PARAM) cout<<"NOT_FOUND_2_PARAM";
+			else if (err==NOT_FOUND_PARAM) cout<<"NOT_FOUND_PARAM";
+			else if (err==NOT_FOUND_CLOSE_MOD) cout<<"NOT_FOUND_CLOSE_MOD";
+			else if (err==MANY_OPERATORS) cout<<"MANY_OPERATORS";
 			else cout<<"SYNTAX_ERROR";
 			cout<<endl;
 		}
@@ -48,8 +52,20 @@ int _tmain(int argc, _TCHAR* argv[])
 		if (err==OK)
 		{
 			Calc *cptr=new Calc(ptr);
-			cptr->run();
-			cout<<"Result: "<<cptr->getResult();
+			err=cptr->run();
+			if (err!=OK)
+			{
+                cout<<"Errors:";
+				if (err==DIV_NULL) cout<<"DIV_NULL";                   //деление на 0
+				else if (err==NOT_FOUND_OPERATOR) cout<<"NOT_FOUND_OPERATOR";         //Нет соотвествия оператору
+				else if (err==EXP_NULL) cout<<"EXP_NULL";                   //выражение пустое
+				else if (err==NOT_FOUND_2_PARAM) cout<<"NOT_FOUND_2_PARAM";
+				else if (err==NOT_FOUND_PARAM) cout<<"NOT_FOUND_PARAM";
+				else if (err==NOT_FOUND_CLOSE_MOD) cout<<"NOT_FOUND_CLOSE_MOD";
+				else if (err==MANY_OPERATORS) cout<<"MANY_OPERATORS";
+				else cout<<"SYNTAX_ERROR";
+				cout<<endl;
+			} else			cout<<"Result: "<<cptr->getResult();
 			delete cptr;
 			cout<<endl;
 		}
